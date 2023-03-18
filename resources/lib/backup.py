@@ -83,22 +83,25 @@ class XbmcBackup:
 
         for aDir in dirs:
             if(self.remote_vfs.exists(self.remote_base_path + aDir + "/xbmcbackup.val")):
-
-                # format the name according to regional settings
-                folderName = self._dateFormat(aDir)
+                try:
+                    folderName = self._dateFormat(aDir)
+                except ValueError:
+                    folderName = aDir
 
                 result.append((aDir, folderName))
+
 
         for aFile in files:
             file_ext = aFile.split('.')[-1]
             folderName = aFile.split('.')[0]
 
             if(file_ext == 'zip' and len(folderName) == 12 and folderName.isdigit()):
-
                 # format the name according to regional settings and display the file size
                 folderName = "%s - %s" % (self._dateFormat(folderName), utils.diskString(self.remote_vfs.fileSize(self.remote_base_path + aFile)))
+            else:
+                folderName = aFile.split('.')[0]
 
-                result.append((aFile, folderName))
+            result.append((aFile, folderName))
 
         result.sort(key=folderSort, reverse=reverse)
 
@@ -659,3 +662,4 @@ class FileManager:
 
     def fileSize(self):
         return self.totalSize
+
