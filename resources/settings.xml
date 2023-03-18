@@ -191,7 +191,7 @@
           </dependencies>
           <control type="toggle" />
         </setting>
-        <setting id="backup_config" type="boolean" label="30035" help="">
+        <setting id="backup_userdata" type="boolean" label="30035" help="">
           <level>0</level>
           <default>true</default>
           <dependencies>
@@ -242,6 +242,14 @@
         <setting id="backup_addons" type="boolean" label="30030" help="">
           <level>0</level>
           <default>true</default>
+          <dependencies>
+            <dependency type="visible" setting="backup_selection_type">0</dependency>
+          </dependencies>
+          <control type="toggle" />
+        </setting>
+        <setting id="backup_config" type="boolean" label="30160" help="">
+          <level>0</level>
+          <default>false</default>
           <dependencies>
             <dependency type="visible" setting="backup_selection_type">0</dependency>
           </dependencies>

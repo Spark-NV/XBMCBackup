@@ -30,7 +30,7 @@ class XbmcBackup:
     ZIP_TEMP_PATH = None
 
     # list of dirs for the "simple" file selection
-    simple_directory_list = ['addons', 'addon_data', 'database', 'game_saves', 'playlists', 'profiles', 'thumbnails', 'config']
+    simple_directory_list = ['addons', 'addon_data', 'database', 'game_saves', 'playlists', 'profiles', 'thumbnails', 'config', 'userdata']
 
     # file systems
     xbmc_vfs = None

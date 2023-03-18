@@ -126,8 +126,8 @@ msgid "Thumbnails/Fanart"
 msgstr ""
 
 msgctxt "#30035"
-msgid "Config Files"
-msgstr ""
+msgid "Userdata Files"
+msgstr "Userdata Files"
 
 msgctxt "#30036"
 msgid "Disclaimer"
@@ -620,3 +620,7 @@ msgstr ""
 msgctxt "#30159"
 msgid "Backup started with unknown mode"
 msgstr ""
+
+msgctxt "#30160"
+msgid ".Config Files"
+msgstr ".Config Files"

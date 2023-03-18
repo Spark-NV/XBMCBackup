@@ -78,6 +78,16 @@
 		]
 	},
 	"config":{
+			"root":"/storage/",
+			"dirs":[
+			{
+				"type":"include",
+				"path":"/storage/.config/",
+				"recurse":true
+			}
+		]
+	},
+	"userdata":{
 			"root":"special://home/userdata/",
 			"dirs":[
 			{

@@ -127,8 +127,8 @@ msgid "Thumbnails/Fanart"
 msgstr "Thumbnails/Fanart"
 
 msgctxt "#30035"
-msgid "Config Files"
-msgstr "Config Files"
+msgid "Userdata Files"
+msgstr "Userdata Files"
 
 msgctxt "#30036"
 msgid "Disclaimer"
@@ -621,6 +621,10 @@ msgstr ""
 msgctxt "#30159"
 msgid "Backup started with unknown mode"
 msgstr ""
+
+msgctxt "#30160"
+msgid ".Config Files"
+msgstr ".Config Files"
 
 #~ msgctxt "#30045"
 #~ msgid "Error: Remote path doesn't exist"
