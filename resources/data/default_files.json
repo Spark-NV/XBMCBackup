@@ -78,7 +78,7 @@
 		]
 	},
 	"config":{
-			"root":"/storage/",
+			"root":"/storage/.config/",
 			"dirs":[
 			{
 				"type":"include",
